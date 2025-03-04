@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import FeedbackForm from "@/components/FeedbackForm";
 
@@ -34,7 +35,7 @@ const Index = () => {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-muted-foreground max-w-md mx-auto"
         >
-          Endurgjöf þín skiptir máli. Fylltu út eyðublaðið hér að neðan til að senda nafnlausa endurgjöf með valfrjálsum samskiptaupplýsingum.
+          Þessi vefsíða er öruggur vettvangur starfsmanna til þess að tilkynna um lögbrot eða aðra ámælisverða starfssemi innan indó sparisjóðs
         </motion.p>
       </motion.div>
       
