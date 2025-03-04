@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import FeedbackForm from "@/components/FeedbackForm";
 
@@ -18,7 +17,7 @@ const Index = () => {
           className="inline-block mb-2"
         >
           <span className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full font-medium">
-            Nafnlaus Endurgjöf
+            Nafnlaus Uppljóstrun
           </span>
         </motion.div>
         <motion.h1 
