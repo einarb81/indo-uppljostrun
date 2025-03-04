@@ -21,8 +21,8 @@ export const FeedbackForm = () => {
     
     if (!activity.trim()) {
       toast({
-        title: "Required field missing",
-        description: "Please describe the activity before submitting.",
+        title: "Skyldusvæði vantar",
+        description: "Vinsamlegast lýstu athöfninni áður en þú sendir inn.",
         variant: "destructive",
       });
       return;
@@ -37,8 +37,8 @@ export const FeedbackForm = () => {
       setIsSuccess(true);
       
       toast({
-        title: "Feedback submitted",
-        description: "Your anonymous feedback has been sent successfully.",
+        title: "Endurgjöf send",
+        description: "Nafnlausa endurgjöfin þín hefur verið send.",
       });
       
       // Reset form after 2 seconds
@@ -95,22 +95,22 @@ export const FeedbackForm = () => {
             <CardHeader className="space-y-1">
               <div className="flex items-center space-x-2">
                 <Badge variant="outline" className="text-xs font-normal px-2 py-0 border-primary/20 text-primary bg-primary/5">
-                  Anonymous
+                  Nafnlaust
                 </Badge>
               </div>
-              <CardTitle className="text-2xl">Feedback Form</CardTitle>
+              <CardTitle className="text-2xl">Endurgjafar Eyðublað</CardTitle>
               <CardDescription>
-                Share your thoughts anonymously. Contact information is optional.
+                Deildu skoðunum þínum nafnlaust. Samskiptaupplýsingar eru valfrjálsar.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <motion.div variants={itemVariants} className="space-y-2">
                 <Label htmlFor="activity" className="text-sm font-medium">
-                  Describe the activity <span className="text-destructive">*</span>
+                  Lýstu athöfninni <span className="text-destructive">*</span>
                 </Label>
                 <Textarea
                   id="activity"
-                  placeholder="Please provide details about the activity..."
+                  placeholder="Vinsamlegast gefðu upplýsingar um athöfnina..."
                   value={activity}
                   onChange={(e) => setActivity(e.target.value)}
                   className="min-h-[120px] border-border/50 focus:border-primary focus-visible:ring-1 focus-visible:ring-primary/30 focus-visible:ring-offset-0"
@@ -120,12 +120,12 @@ export const FeedbackForm = () => {
               
               <motion.div variants={itemVariants} className="space-y-2">
                 <Label htmlFor="contactInfo" className="text-sm font-medium flex items-center justify-between">
-                  <span>Contact information</span>
-                  <span className="text-xs text-muted-foreground">(Optional)</span>
+                  <span>Samskiptaupplýsingar</span>
+                  <span className="text-xs text-muted-foreground">(Valfrjálst)</span>
                 </Label>
                 <Input
                   id="contactInfo"
-                  placeholder="Email or phone number"
+                  placeholder="Netfang eða símanúmer"
                   value={contactInfo}
                   onChange={(e) => setContactInfo(e.target.value)}
                   className="border-border/50 focus:border-primary focus-visible:ring-1 focus-visible:ring-primary/30 focus-visible:ring-offset-0"
@@ -145,10 +145,10 @@ export const FeedbackForm = () => {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      Submitting...
+                      Sendi...
                     </span>
                   ) : (
-                    "Submit Feedback"
+                    "Senda Endurgjöf"
                   )}
                 </Button>
               </motion.div>
@@ -170,9 +170,9 @@ export const FeedbackForm = () => {
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
-              <CardTitle className="text-2xl">Thank You</CardTitle>
+              <CardTitle className="text-2xl">Takk Fyrir</CardTitle>
               <CardDescription>
-                Your feedback has been submitted anonymously.
+                Nafnlausa endurgjöfin þín hefur verið send.
               </CardDescription>
             </CardHeader>
           </Card>

@@ -18,7 +18,7 @@ const Index = () => {
           className="inline-block mb-2"
         >
           <span className="px-3 py-1 text-xs bg-primary/10 text-primary rounded-full font-medium">
-            Anonymous Feedback
+            Nafnlaus Endurgjöf
           </span>
         </motion.div>
         <motion.h1 
@@ -27,7 +27,7 @@ const Index = () => {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="text-3xl md:text-4xl font-medium tracking-tight mb-2"
         >
-          Share Your Thoughts
+          Deildu Skoðunum Þínum
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 10 }}
@@ -35,7 +35,7 @@ const Index = () => {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-muted-foreground max-w-md mx-auto"
         >
-          Your feedback matters. Fill out the form below to submit anonymous feedback with optional contact information.
+          Endurgjöf þín skiptir máli. Fylltu út eyðublaðið hér að neðan til að senda nafnlausa endurgjöf með valfrjálsum samskiptaupplýsingum.
         </motion.p>
       </motion.div>
       
@@ -54,7 +54,7 @@ const Index = () => {
         transition={{ delay: 0.9, duration: 0.5 }}
         className="mt-12 text-sm text-muted-foreground text-center"
       >
-        <p>Privacy first. Your data is only shared as specified in the form.</p>
+        <p>Persónuvernd í fyrsta sæti. Gögnum þínum er aðeins deilt eins og tilgreint er í eyðublaðinu.</p>
       </motion.div>
     </div>
   );

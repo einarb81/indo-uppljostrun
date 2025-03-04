@@ -9,7 +9,7 @@ const NotFound = () => {
 
   useEffect(() => {
     console.error(
-      "404 Error: User attempted to access non-existent route:",
+      "404 Villa: Notandi reyndi að opna síðu sem er ekki til:",
       location.pathname
     );
   }, [location.pathname]);
@@ -36,7 +36,7 @@ const NotFound = () => {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="text-3xl font-medium mb-4"
         >
-          Page Not Found
+          Síða Fannst Ekki
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -44,7 +44,7 @@ const NotFound = () => {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-muted-foreground mb-8"
         >
-          The page you're looking for doesn't exist or has been moved.
+          Síðan sem þú ert að leita að er ekki til eða hefur verið færð.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -52,7 +52,7 @@ const NotFound = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            <a href="/">Return Home</a>
+            <a href="/">Til Baka á Forsíðu</a>
           </Button>
         </motion.div>
       </motion.div>
