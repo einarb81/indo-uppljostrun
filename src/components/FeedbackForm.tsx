@@ -98,19 +98,19 @@ export const FeedbackForm = () => {
                   Nafnlaust
                 </Badge>
               </div>
-              <CardTitle className="text-2xl">Endurgjafar Eyðublað</CardTitle>
+              <CardTitle className="text-2xl">Nafnljós uppljóstrun</CardTitle>
               <CardDescription>
-                Deildu skoðunum þínum nafnlaust. Samskiptaupplýsingar eru valfrjálsar.
+                Hér getur þú sem starfsmaður indó á nafnlausan hátt upplýst um atburði, hluti eða hvað sem er annað sem þér finnst vera ámælisvert. Regluvörður indó fer í gegnum innsendinguna þína og vinnur hana samkvæmt uppljóstrunar vinnuferli indó sparisjóðs
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <motion.div variants={itemVariants} className="space-y-2">
                 <Label htmlFor="activity" className="text-sm font-medium">
-                  Lýstu athöfninni <span className="text-destructive">*</span>
+                  Lýstu því sem gerðist eða því sem þér finnst <span className="text-destructive">*</span>
                 </Label>
                 <Textarea
                   id="activity"
-                  placeholder="Vinsamlegast gefðu upplýsingar um athöfnina..."
+                  placeholder="Skrifaðu hér eins íterlega um það sem þú vilt uppljóstra um eins og kostur gefst..."
                   value={activity}
                   onChange={(e) => setActivity(e.target.value)}
                   className="min-h-[120px] border-border/50 focus:border-primary focus-visible:ring-1 focus-visible:ring-primary/30 focus-visible:ring-offset-0"
@@ -148,7 +148,7 @@ export const FeedbackForm = () => {
                       Sendi...
                     </span>
                   ) : (
-                    "Senda Endurgjöf"
+                    "Senda inn nafnlausa uppljóstrun"
                   )}
                 </Button>
               </motion.div>
