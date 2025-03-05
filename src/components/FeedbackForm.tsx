@@ -38,7 +38,7 @@ export const FeedbackForm = () => {
       
       toast({
         title: "Endurgjöf send",
-        description: "Nafnlausa endurgjöfin þín hefur verið send.",
+        description: "Nafnlausa uppljóstrunin þín hefur verið komið til regluvörslu indó",
       });
       
       // Reset form after 4 seconds (changed from 2 seconds)
@@ -172,7 +172,7 @@ export const FeedbackForm = () => {
               </div>
               <CardTitle className="text-2xl">Takk Fyrir</CardTitle>
               <CardDescription>
-                Nafnlausa endurgjöfin þín hefur verið send.
+                Nafnlausa uppljóstrunin þín hefur verið komið til regluvörslu indó
               </CardDescription>
             </CardHeader>
           </Card>
