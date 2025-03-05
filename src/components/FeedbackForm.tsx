@@ -41,12 +41,12 @@ export const FeedbackForm = () => {
         description: "Nafnlausa endurgjöfin þín hefur verið send.",
       });
       
-      // Reset form after 2 seconds
+      // Reset form after 4 seconds (changed from 2 seconds)
       setTimeout(() => {
         setActivity("");
         setContactInfo("");
         setIsSuccess(false);
-      }, 2000);
+      }, 4000);
     }, 1500);
   };
 
@@ -136,7 +136,7 @@ export const FeedbackForm = () => {
               <motion.div variants={itemVariants} className="w-full">
                 <Button 
                   type="submit" 
-                  className="w-full transition-all duration-300 relative bg-primary hover:bg-primary/90 text-primary-foreground"
+                  className="w-full transition-all duration-300 relative bg-[#F5BEFD] hover:bg-[#F5BEFD]/90 text-primary-foreground"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

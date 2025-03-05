@@ -1,10 +1,9 @@
-
 import { motion } from "framer-motion";
 import FeedbackForm from "@/components/FeedbackForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-background to-secondary/20 p-4 sm:p-6 md:p-8">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#6AE4C6] p-4 sm:p-6 md:p-8">
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
